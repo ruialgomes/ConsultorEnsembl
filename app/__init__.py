@@ -3,7 +3,7 @@ from flask import Flask
 
 app = Flask(__name__)
 
-# Registra um filtro para o Jinja2 formatar JSON bonito
+# Registra um filtro para o Jinja2 formatar JSON
 @app.template_filter('to_pretty_json')
 def to_pretty_json(value):
     return json.dumps(value, indent=4, sort_keys=True)
