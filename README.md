@@ -41,3 +41,9 @@ Clique em Consultar
 O sistema exibirá um card com as informações essenciais (Cromossomo, Posição, Alelos, etc.).
 
 Se desejar ver todos os dados técnicos retornados pelo Ensembl, clique nos botões para abrir em uma tabela ou direto no formato JSON para ser reaproveitado.
+
+Para testar com pytest, execute: 
+
+'''bash
+# Testar com pytest
+docker run --rm consultor-ensembl pytest
