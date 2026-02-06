@@ -1,11 +1,11 @@
 # Consultor de Variantes do Ensembl
 
-Uma aplicação web desenvolvida em Python e Flask para consulta de variantes genéticas humanas, utilizando a [Ensembl REST API](https://rest.ensembl.org/).
+Essa é uma aplicação web para realizar a consulta de variantes genéticas humanas, utilizando a [Ensembl REST API](https://rest.ensembl.org/) como fonte de dados e desenvolvida em Python e Flask, e utilizando docker. Apos inserir o rsID desejado, é feita a busca no Ensembl para variantes humanas, e os resultados principais sao mostrados. Ainda, caso desejado, há botões que permitem acessar toda informação disponibilizada pelo Ensembl, tanto em forma de tabela simples com lista de dados, quanto diretamente no formato JSON disponibilizado pelo banco de dados, ou ate usar diretamente o JSON obtendo da API.
 
 ## Funcionalidades
 - Consulta de variantes por identificador (rsID).
 - Visualização de dados principais: Cromossomo, Posição, Alelos e MAF.
-- **Tabela Dinâmica**: Opção para expandir e visualizar todos os atributos retornados pela API.
+- Tabelas Dinâmicas, com opção para expandir e visualizar todos os atributos retornados pela API em formato tabular ou JSON.
 - Interface responsiva utilizando Bootstrap 5.
 - API Endpoint interno para retorno em formato JSON.
 
@@ -21,7 +21,7 @@ Uma aplicação web desenvolvida em Python e Flask para consulta de variantes ge
 ## Como Executar o Projeto
 
 ### Docker
-Certifique-se de ter o Docker instalado. Na raiz do projeto, execute:
+Certifique-se de ter o [Docker](https://www.docker.com/get-started/) instalado. Baixe o projeto para sua máquina e extraia para a pasta desejada. Abra o terminal/bash e navegue ate a pasta extraida do projeto e execute os seguintes comandos:
 
 ```bash
 # Construir a imagem
@@ -30,6 +30,7 @@ docker build -t consultor-ensembl .
 # Rodar o container
 docker run -p 5000:5000 consultor-ensembl
 ```
+Onde 'Consultor-ensembl' pode ser trocado para qualquer nome desejado.
 
 Abra o navegador em http://localhost:5000/
 
