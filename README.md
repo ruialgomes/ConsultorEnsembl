@@ -44,6 +44,7 @@ Se desejar ver todos os dados t√©cnicos retornados pelo Ensembl, clique nos bot√
 
 Para testar com pytest, execute: 
 
-'''bash
+```bash
 # Testar com pytest
 docker run --rm consultor-ensembl pytest
+```
