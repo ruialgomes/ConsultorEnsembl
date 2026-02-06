@@ -1,6 +1,6 @@
 # Consultor de Variantes do Ensembl
 
-Essa é uma aplicação web para realizar a consulta de variantes genéticas humanas, utilizando a [Ensembl REST API](https://rest.ensembl.org/) como fonte de dados e desenvolvida em Python e Flask, e utilizando docker. Apos inserir o rsID desejado, é feita a busca no Ensembl para variantes humanas, e os resultados principais sao mostrados. Ainda, caso desejado, há botões que permitem acessar toda informação disponibilizada pelo Ensembl, tanto em forma de tabela simples com lista de dados, quanto diretamente no formato JSON disponibilizado pelo banco de dados, ou ate usar diretamente o JSON obtendo da API.
+Essa é uma aplicação web para realizar a consulta de variantes genéticas humanas, utilizando a [Ensembl REST API](https://rest.ensembl.org/) como fonte de dados e desenvolvida em Python, Flask, e docker. Apos inserir o rsID desejado, é feita a busca no Ensembl para variantes humanas, e os resultados principais são mostrados. Ainda, caso desejado, há botões que permitem acessar toda informação disponibilizada pelo Ensembl, tanto em forma de tabela simples com lista de dados, quanto diretamente no formato JSON disponibilizado pelo banco de dados, ou ate usar diretamente o JSON obtendo da API para usuários mais experientes.
 
 ## Funcionalidades
 - Consulta de variantes por identificador (rsID).
